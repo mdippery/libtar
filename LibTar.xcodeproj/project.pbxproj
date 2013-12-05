@@ -6,8 +6,33 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B70843DE185149C400054BC8 /* append.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843D3185149C400054BC8 /* append.c */; };
+		B70843DF185149C400054BC8 /* block.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843D4185149C400054BC8 /* block.c */; };
+		B70843E0185149C400054BC8 /* decode.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843D5185149C400054BC8 /* decode.c */; };
+		B70843E1185149C400054BC8 /* encode.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843D6185149C400054BC8 /* encode.c */; };
+		B70843E2185149C400054BC8 /* extract.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843D7185149C400054BC8 /* extract.c */; };
+		B70843E3185149C400054BC8 /* handle.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843D8185149C400054BC8 /* handle.c */; };
+		B70843E4185149C400054BC8 /* internal.h in Headers */ = {isa = PBXBuildFile; fileRef = B70843D9185149C400054BC8 /* internal.h */; };
+		B70843E5185149C400054BC8 /* libtar.h in Headers */ = {isa = PBXBuildFile; fileRef = B70843DA185149C400054BC8 /* libtar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B70843E6185149C400054BC8 /* output.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843DB185149C400054BC8 /* output.c */; };
+		B70843E7185149C400054BC8 /* util.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843DC185149C400054BC8 /* util.c */; };
+		B70843E8185149C400054BC8 /* wrapper.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843DD185149C400054BC8 /* wrapper.c */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		B70843CB1851488900054BC8 /* libtar.1.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libtar.1.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		B70843D3185149C400054BC8 /* append.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = append.c; path = libtar/append.c; sourceTree = "<group>"; };
+		B70843D4185149C400054BC8 /* block.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = block.c; path = libtar/block.c; sourceTree = "<group>"; };
+		B70843D5185149C400054BC8 /* decode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = decode.c; path = libtar/decode.c; sourceTree = "<group>"; };
+		B70843D6185149C400054BC8 /* encode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = encode.c; path = libtar/encode.c; sourceTree = "<group>"; };
+		B70843D7185149C400054BC8 /* extract.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = extract.c; path = libtar/extract.c; sourceTree = "<group>"; };
+		B70843D8185149C400054BC8 /* handle.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = handle.c; path = libtar/handle.c; sourceTree = "<group>"; };
+		B70843D9185149C400054BC8 /* internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = internal.h; path = libtar/internal.h; sourceTree = "<group>"; };
+		B70843DA185149C400054BC8 /* libtar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = libtar.h; path = libtar/libtar.h; sourceTree = "<group>"; };
+		B70843DB185149C400054BC8 /* output.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = output.c; path = libtar/output.c; sourceTree = "<group>"; };
+		B70843DC185149C400054BC8 /* util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = util.c; path = libtar/util.c; sourceTree = "<group>"; };
+		B70843DD185149C400054BC8 /* wrapper.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = wrapper.c; path = libtar/wrapper.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,6 +49,7 @@
 		B70843C21851488800054BC8 = {
 			isa = PBXGroup;
 			children = (
+				B70843D2185149B600054BC8 /* libtar */,
 				B70843CC1851488900054BC8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -36,6 +62,24 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		B70843D2185149B600054BC8 /* libtar */ = {
+			isa = PBXGroup;
+			children = (
+				B70843D3185149C400054BC8 /* append.c */,
+				B70843D4185149C400054BC8 /* block.c */,
+				B70843D5185149C400054BC8 /* decode.c */,
+				B70843D6185149C400054BC8 /* encode.c */,
+				B70843D7185149C400054BC8 /* extract.c */,
+				B70843D8185149C400054BC8 /* handle.c */,
+				B70843D9185149C400054BC8 /* internal.h */,
+				B70843DA185149C400054BC8 /* libtar.h */,
+				B70843DB185149C400054BC8 /* output.c */,
+				B70843DC185149C400054BC8 /* util.c */,
+				B70843DD185149C400054BC8 /* wrapper.c */,
+			);
+			name = libtar;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -43,6 +87,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B70843E5185149C400054BC8 /* libtar.h in Headers */,
+				B70843E4185149C400054BC8 /* internal.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +143,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B70843DE185149C400054BC8 /* append.c in Sources */,
+				B70843E0185149C400054BC8 /* decode.c in Sources */,
+				B70843DF185149C400054BC8 /* block.c in Sources */,
+				B70843E3185149C400054BC8 /* handle.c in Sources */,
+				B70843E8185149C400054BC8 /* wrapper.c in Sources */,
+				B70843E6185149C400054BC8 /* output.c in Sources */,
+				B70843E7185149C400054BC8 /* util.c in Sources */,
+				B70843E2185149C400054BC8 /* extract.c in Sources */,
+				B70843E1185149C400054BC8 /* encode.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
