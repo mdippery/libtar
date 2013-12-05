@@ -29,7 +29,7 @@
 #define HAVE_LIBGEN_H 1
 
 /* Define to 1 if you have the `z' library (-lz). */
-#define HAVE_LIBZ 1
+#define HAVE_LIBZ 0
 
 /* Define to 1 if the system has the type `major_t'. */
 /* #undef HAVE_MAJOR_T */
