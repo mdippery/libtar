@@ -43,7 +43,21 @@
 		B70844BC18518A1D00054BC8 /* Pitch.h in Headers */ = {isa = PBXBuildFile; fileRef = B70844BB18518A1D00054BC8 /* Pitch.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B70844BF18518B0F00054BC8 /* TARFile.h in Headers */ = {isa = PBXBuildFile; fileRef = B70844BD18518B0F00054BC8 /* TARFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B70844C018518B0F00054BC8 /* TARFile.m in Sources */ = {isa = PBXBuildFile; fileRef = B70844BE18518B0F00054BC8 /* TARFile.m */; };
+		B70844C6185192A700054BC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70844A91851898000054BC8 /* Foundation.framework */; };
+		B70844D3185192E700054BC8 /* testtool.m in Sources */ = {isa = PBXBuildFile; fileRef = B70844D2185192E700054BC8 /* testtool.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B70844C3185192A700054BC8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B70843CB1851488900054BC8 /* libtar.1.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libtar.1.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +82,8 @@
 		B70844BB18518A1D00054BC8 /* Pitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Pitch.h; path = libpitch/Pitch.h; sourceTree = "<group>"; };
 		B70844BD18518B0F00054BC8 /* TARFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TARFile.h; path = libpitch/TARFile.h; sourceTree = "<group>"; };
 		B70844BE18518B0F00054BC8 /* TARFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TARFile.m; path = libpitch/TARFile.m; sourceTree = "<group>"; };
+		B70844C5185192A700054BC8 /* testtool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = testtool; sourceTree = BUILT_PRODUCTS_DIR; };
+		B70844D2185192E700054BC8 /* testtool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = testtool.m; path = tests/testtool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +102,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B70844C2185192A700054BC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B70844C6185192A700054BC8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -94,6 +118,7 @@
 			children = (
 				B708447D1851893C00054BC8 /* libpitch */,
 				B70843D2185149B600054BC8 /* libtar */,
+				B70844D1185192CA00054BC8 /* Tests */,
 				B70844831851894700054BC8 /* Frameworks */,
 				B70843CC1851488900054BC8 /* Products */,
 			);
@@ -104,6 +129,7 @@
 			children = (
 				B70843CB1851488900054BC8 /* libtar.1.dylib */,
 				B70844821851894700054BC8 /* libpitch.1.dylib */,
+				B70844C5185192A700054BC8 /* testtool */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -147,6 +173,14 @@
 				B70844A91851898000054BC8 /* Foundation.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B70844D1185192CA00054BC8 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B70844D2185192E700054BC8 /* testtool.m */,
+			);
+			name = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +249,23 @@
 			productReference = B70844821851894700054BC8 /* libpitch.1.dylib */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
+		B70844C4185192A700054BC8 /* testtool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B70844CE185192A700054BC8 /* Build configuration list for PBXNativeTarget "testtool" */;
+			buildPhases = (
+				B70844C1185192A700054BC8 /* Sources */,
+				B70844C2185192A700054BC8 /* Frameworks */,
+				B70844C3185192A700054BC8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = testtool;
+			productName = testtool;
+			productReference = B70844C5185192A700054BC8 /* testtool */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -238,6 +289,7 @@
 			targets = (
 				B70843CA1851488900054BC8 /* tar */,
 				B70844811851894700054BC8 /* pitch */,
+				B70844C4185192A700054BC8 /* testtool */,
 			);
 		};
 /* End PBXProject section */
@@ -277,6 +329,14 @@
 				B70844AE185189E300054BC8 /* encode.c in Sources */,
 				B70844B2185189E300054BC8 /* libtar_hash.c in Sources */,
 				B70844B3185189E300054BC8 /* libtar_list.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B70844C1185192A700054BC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B70844D3185192E700054BC8 /* testtool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +469,24 @@
 			};
 			name = Release;
 		};
+		B70844CF185192A700054BC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B70844D0185192A700054BC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -435,6 +513,14 @@
 			buildConfigurations = (
 				B70844A41851894800054BC8 /* Debug */,
 				B70844A51851894800054BC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B70844CE185192A700054BC8 /* Build configuration list for PBXNativeTarget "testtool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B70844CF185192A700054BC8 /* Debug */,
+				B70844D0185192A700054BC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
