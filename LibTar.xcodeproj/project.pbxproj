@@ -41,7 +41,7 @@
 		B70844B9185189E300054BC8 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = B70843E918514AB100054BC8 /* config.h */; };
 		B70844BA185189E300054BC8 /* compat.h in Headers */ = {isa = PBXBuildFile; fileRef = B70843EB18514B3500054BC8 /* compat.h */; };
 		B70844BC18518A1D00054BC8 /* Pitch.h in Headers */ = {isa = PBXBuildFile; fileRef = B70844BB18518A1D00054BC8 /* Pitch.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B70844BF18518B0F00054BC8 /* TARFile.h in Headers */ = {isa = PBXBuildFile; fileRef = B70844BD18518B0F00054BC8 /* TARFile.h */; };
+		B70844BF18518B0F00054BC8 /* TARFile.h in Headers */ = {isa = PBXBuildFile; fileRef = B70844BD18518B0F00054BC8 /* TARFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B70844C018518B0F00054BC8 /* TARFile.m in Sources */ = {isa = PBXBuildFile; fileRef = B70844BE18518B0F00054BC8 /* TARFile.m */; };
 /* End PBXBuildFile section */
 
