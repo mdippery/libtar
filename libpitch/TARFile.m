@@ -22,8 +22,11 @@
  */
 
 #import "TARFile.h"
+
 #import "NSError+Pitch.h"
 #import "Pitch.h"
+#import "TAREntry.h"
+
 #import "libtar.h"
 
 
@@ -35,7 +38,7 @@
 
 @implementation TARFile
 
-+ (TARFile *)fileWithContentsOfFile:(NSString *)source
++ (id)fileWithContentsOfFile:(NSString *)source
 {
     return [[[self alloc] initWithContentsOfFile:source] autorelease];
 }
@@ -105,9 +108,8 @@
     }
 
     while ((i = th_read(tar)) == 0) {
-        char *path = th_get_pathname(tar);
-        NSString *s = [NSString stringWithCString:path encoding:NSUTF8StringEncoding];
-        [contents addObject:s];
+        TAREntry *entry = [TAREntry entryWithContentsOfTAR:tar];
+        [contents addObject:entry];
     }
 
     if (![self tarClose:tar error:&error]) {

@@ -1,5 +1,6 @@
 #import <Foundation/Foundation.h>
 #import "Pitch.h"
+#import "TAREntry.h"
 
 
 int main(int argc, const char **argv)
@@ -12,8 +13,8 @@ int main(int argc, const char **argv)
     TARFile *tar = [TARFile fileWithContentsOfFile:path];
 
     NSArray *contents = [tar contents];
-    for (NSString *item in contents) {
-        printf("%s\n", [item UTF8String]);
+    for (TAREntry *item in contents) {
+        printf("%s\n", [[item description] UTF8String]);
     }
 
     fprintf(stderr, "Created TARFile: %s\n", [[tar description] UTF8String]);

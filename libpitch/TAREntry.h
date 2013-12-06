@@ -22,17 +22,24 @@
  */
 
 #import <Foundation/Foundation.h>
+#import "libtar.h"
 
 
-@interface TARFile : NSObject
+@interface TAREntry : NSObject
+{
+@private
+    mode_t _raw_mode;
+}
 
-@property (readonly) NSString *source;
+@property (readonly) NSString *name;
+@property (readonly) NSString *owner;
+@property (readonly) NSString *group;
+@property (readonly) NSString *mode;
+@property (readonly) NSInteger size;
+@property (readonly) NSDate *mtime;
+@property (readonly) NSInteger checksum;
 
-+ (id)fileWithContentsOfFile:(NSString *)source;
-
-- (id)initWithContentsOfFile:(NSString *)source;
-
-- (NSArray *)contents;
-- (BOOL)extractToDirectory:(NSString *)directory error:(NSError **)error;
++ (id)entryWithContentsOfTAR:(TAR *)tar;
+- (id)initWithContentsOfTAR:(TAR *)tar;
 
 @end

@@ -49,6 +49,8 @@
 		B70844DE1851AC9E00054BC8 /* Pitch.m in Sources */ = {isa = PBXBuildFile; fileRef = B70844DD1851AC9E00054BC8 /* Pitch.m */; };
 		B70844E11851B4B500054BC8 /* NSError+Pitch.h in Headers */ = {isa = PBXBuildFile; fileRef = B70844DF1851B4B500054BC8 /* NSError+Pitch.h */; };
 		B70844E21851B4B500054BC8 /* NSError+Pitch.m in Sources */ = {isa = PBXBuildFile; fileRef = B70844E01851B4B500054BC8 /* NSError+Pitch.m */; };
+		B70844E51851BB7300054BC8 /* TAREntry.h in Headers */ = {isa = PBXBuildFile; fileRef = B70844E31851BB7300054BC8 /* TAREntry.h */; };
+		B70844E61851BB7300054BC8 /* TAREntry.m in Sources */ = {isa = PBXBuildFile; fileRef = B70844E41851BB7300054BC8 /* TAREntry.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +103,8 @@
 		B70844DD1851AC9E00054BC8 /* Pitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Pitch.m; path = libpitch/Pitch.m; sourceTree = "<group>"; };
 		B70844DF1851B4B500054BC8 /* NSError+Pitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSError+Pitch.h"; path = "libpitch/NSError+Pitch.h"; sourceTree = "<group>"; };
 		B70844E01851B4B500054BC8 /* NSError+Pitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSError+Pitch.m"; path = "libpitch/NSError+Pitch.m"; sourceTree = "<group>"; };
+		B70844E31851BB7300054BC8 /* TAREntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TAREntry.h; path = libpitch/TAREntry.h; sourceTree = "<group>"; };
+		B70844E41851BB7300054BC8 /* TAREntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TAREntry.m; path = libpitch/TAREntry.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +186,8 @@
 				B70844DD1851AC9E00054BC8 /* Pitch.m */,
 				B70844DF1851B4B500054BC8 /* NSError+Pitch.h */,
 				B70844E01851B4B500054BC8 /* NSError+Pitch.m */,
+				B70844E31851BB7300054BC8 /* TAREntry.h */,
+				B70844E41851BB7300054BC8 /* TAREntry.m */,
 				B70844BD18518B0F00054BC8 /* TARFile.h */,
 				B70844BE18518B0F00054BC8 /* TARFile.m */,
 			);
@@ -229,6 +235,7 @@
 				B70844E11851B4B500054BC8 /* NSError+Pitch.h in Headers */,
 				B70844B4185189E300054BC8 /* libtar_listhash.h in Headers */,
 				B70844BC18518A1D00054BC8 /* Pitch.h in Headers */,
+				B70844E51851BB7300054BC8 /* TAREntry.h in Headers */,
 				B70844B5185189E300054BC8 /* libtar.h in Headers */,
 				B70844B1185189E300054BC8 /* internal.h in Headers */,
 			);
@@ -353,6 +360,7 @@
 				B70844AF185189E300054BC8 /* extract.c in Sources */,
 				B70844AE185189E300054BC8 /* encode.c in Sources */,
 				B70844B2185189E300054BC8 /* libtar_hash.c in Sources */,
+				B70844E61851BB7300054BC8 /* TAREntry.m in Sources */,
 				B70844B3185189E300054BC8 /* libtar_list.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
