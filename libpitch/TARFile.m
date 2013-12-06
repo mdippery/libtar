@@ -71,7 +71,7 @@
         }
         return NULL;
     }
-    *error = nil;
+    if (error) *error = nil;
     return tar;
 }
 
@@ -85,7 +85,7 @@
         }
         return NO;
     }
-    *error = nil;
+    if (error) *error = nil;
     return YES;
 }
 
@@ -136,7 +136,7 @@
 
     if (![self tarClose:tar error:error]) return NO;
 
-    *error = nil;
+    if (error) *error = nil;
     return YES;
 }
 
