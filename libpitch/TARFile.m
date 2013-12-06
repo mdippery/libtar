@@ -108,6 +108,10 @@
     while ((i = th_read(tar)) == 0) {
         TAREntry *entry = [TAREntry entryWithContentsOfTAR:tar];
         [contents addObject:entry];
+        if (TH_ISREG(tar) && tar_skip_regfile(tar) != 0) {
+            NSLog(@"Could not skip regfile: %s", strerror(errno));
+            break;
+        }
     }
 
     if (![self tarClose:tar error:&error]) {

@@ -13,6 +13,7 @@ int main(int argc, const char **argv)
     TARFile *tar = [TARFile fileWithContentsOfFile:path];
 
     NSArray *contents = [tar contents];
+    printf("%ld items found\n", [contents count]);
     for (TAREntry *item in contents) {
         printf("%s\n", [[item description] UTF8String]);
     }
