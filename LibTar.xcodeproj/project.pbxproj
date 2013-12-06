@@ -50,6 +50,7 @@
 		B70844E21851B4B500054BC8 /* NSError+Pitch.m in Sources */ = {isa = PBXBuildFile; fileRef = B70844E01851B4B500054BC8 /* NSError+Pitch.m */; };
 		B70844E51851BB7300054BC8 /* TAREntry.h in Headers */ = {isa = PBXBuildFile; fileRef = B70844E31851BB7300054BC8 /* TAREntry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B70844E61851BB7300054BC8 /* TAREntry.m in Sources */ = {isa = PBXBuildFile; fileRef = B70844E41851BB7300054BC8 /* TAREntry.m */; };
+		B78C9B7918528DCA00A47D59 /* libpitch.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B70844821851894700054BC8 /* libpitch.1.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B78C9B7918528DCA00A47D59 /* libpitch.1.dylib in Frameworks */,
 				B70844C6185192A700054BC8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
