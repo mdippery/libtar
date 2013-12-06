@@ -33,8 +33,8 @@
 		B70844B1185189E300054BC8 /* internal.h in Headers */ = {isa = PBXBuildFile; fileRef = B70843D9185149C400054BC8 /* internal.h */; };
 		B70844B2185189E300054BC8 /* libtar_hash.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843ED18514BAB00054BC8 /* libtar_hash.c */; };
 		B70844B3185189E300054BC8 /* libtar_list.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843EE18514BAC00054BC8 /* libtar_list.c */; };
-		B70844B4185189E300054BC8 /* libtar_listhash.h in Headers */ = {isa = PBXBuildFile; fileRef = B70843EF18514BAC00054BC8 /* libtar_listhash.h */; };
-		B70844B5185189E300054BC8 /* libtar.h in Headers */ = {isa = PBXBuildFile; fileRef = B70843DA185149C400054BC8 /* libtar.h */; };
+		B70844B4185189E300054BC8 /* libtar_listhash.h in Headers */ = {isa = PBXBuildFile; fileRef = B70843EF18514BAC00054BC8 /* libtar_listhash.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B70844B5185189E300054BC8 /* libtar.h in Headers */ = {isa = PBXBuildFile; fileRef = B70843DA185149C400054BC8 /* libtar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B70844B6185189E300054BC8 /* output.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843DB185149C400054BC8 /* output.c */; };
 		B70844B7185189E300054BC8 /* util.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843DC185149C400054BC8 /* util.c */; };
 		B70844B8185189E300054BC8 /* wrapper.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843DD185149C400054BC8 /* wrapper.c */; };
@@ -49,7 +49,7 @@
 		B70844DE1851AC9E00054BC8 /* Pitch.m in Sources */ = {isa = PBXBuildFile; fileRef = B70844DD1851AC9E00054BC8 /* Pitch.m */; };
 		B70844E11851B4B500054BC8 /* NSError+Pitch.h in Headers */ = {isa = PBXBuildFile; fileRef = B70844DF1851B4B500054BC8 /* NSError+Pitch.h */; };
 		B70844E21851B4B500054BC8 /* NSError+Pitch.m in Sources */ = {isa = PBXBuildFile; fileRef = B70844E01851B4B500054BC8 /* NSError+Pitch.m */; };
-		B70844E51851BB7300054BC8 /* TAREntry.h in Headers */ = {isa = PBXBuildFile; fileRef = B70844E31851BB7300054BC8 /* TAREntry.h */; };
+		B70844E51851BB7300054BC8 /* TAREntry.h in Headers */ = {isa = PBXBuildFile; fileRef = B70844E31851BB7300054BC8 /* TAREntry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B70844E61851BB7300054BC8 /* TAREntry.m in Sources */ = {isa = PBXBuildFile; fileRef = B70844E41851BB7300054BC8 /* TAREntry.m */; };
 /* End PBXBuildFile section */
 

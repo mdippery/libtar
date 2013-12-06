@@ -21,6 +21,7 @@
  * THE SOFTWARE.
  */
 
+#import "TAREntry.h"
 #import "TARFile.h"
 
 @class NSString;
