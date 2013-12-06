@@ -17,7 +17,7 @@
 #include <sys/stat.h>
 #include <tar.h>
 
-#include <libtar_listhash.h>
+#include "libtar_listhash.h"
 
 #ifdef __cplusplus
 extern "C"
