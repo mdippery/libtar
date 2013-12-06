@@ -19,6 +19,7 @@
 		B70843E7185149C400054BC8 /* util.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843DC185149C400054BC8 /* util.c */; };
 		B70843E8185149C400054BC8 /* wrapper.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843DD185149C400054BC8 /* wrapper.c */; };
 		B70843EA18514AB100054BC8 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = B70843E918514AB100054BC8 /* config.h */; };
+		B70843EC18514B3500054BC8 /* compat.h in Headers */ = {isa = PBXBuildFile; fileRef = B70843EB18514B3500054BC8 /* compat.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		B70843DC185149C400054BC8 /* util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = util.c; path = libtar/util.c; sourceTree = "<group>"; };
 		B70843DD185149C400054BC8 /* wrapper.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = wrapper.c; path = libtar/wrapper.c; sourceTree = "<group>"; };
 		B70843E918514AB100054BC8 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = libtar/config.h; sourceTree = "<group>"; };
+		B70843EB18514B3500054BC8 /* compat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = compat.h; path = libtar/compat.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				B70843DC185149C400054BC8 /* util.c */,
 				B70843DD185149C400054BC8 /* wrapper.c */,
 				B70843E918514AB100054BC8 /* config.h */,
+				B70843EB18514B3500054BC8 /* compat.h */,
 			);
 			name = libtar;
 			sourceTree = "<group>";
@@ -92,6 +95,7 @@
 			files = (
 				B70843E5185149C400054BC8 /* libtar.h in Headers */,
 				B70843E4185149C400054BC8 /* internal.h in Headers */,
+				B70843EC18514B3500054BC8 /* compat.h in Headers */,
 				B70843EA18514AB100054BC8 /* config.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
