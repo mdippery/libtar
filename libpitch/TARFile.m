@@ -65,10 +65,13 @@
     int success;
     success = tar_open(&tar, (char *) [[self source] UTF8String], NULL, O_RDONLY, 0, 0);
     if (success == -1) {
-        char *e = strerror(errno);
-        *error = [NSError TARErrorWithDescription:@"Could not open tarfile" reason:e code:TARFileOpenError];
+        if (error) {
+            char *e = strerror(errno);
+            *error = [NSError TARErrorWithDescription:@"Could not open tarfile" reason:e code:TARFileOpenError];
+        }
         return NULL;
     }
+    *error = nil;
     return tar;
 }
 
@@ -76,10 +79,13 @@
 {
     int success = tar_close(tar);
     if (success != 0) {
-        char *e = strerror(errno);
-        *error = [NSError TARErrorWithDescription:@"Could not close tarfile" reason:e code:TARFileCloseError];
+        if (error) {
+            char *e = strerror(errno);
+            *error = [NSError TARErrorWithDescription:@"Could not close tarfile" reason:e code:TARFileCloseError];
+        }
         return NO;
     }
+    *error = nil;
     return YES;
 }
 
@@ -121,13 +127,16 @@
 
     success = tar_extract_all(tar, (char *) [directory UTF8String]);
     if (success != 0) {
-        char *e = strerror(errno);
-        *error = [NSError TARErrorWithDescription:@"Could not extract tar entries" reason:e code:TARFileReadError];
+        if (error) {
+            char *e = strerror(errno);
+            *error = [NSError TARErrorWithDescription:@"Could not extract tar entries" reason:e code:TARFileReadError];
+        }
         return NO;
     }
 
     if (![self tarClose:tar error:error]) return NO;
 
+    *error = nil;
     return YES;
 }
 
