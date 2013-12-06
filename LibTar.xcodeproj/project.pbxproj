@@ -456,12 +456,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EXECUTABLE_PREFIX = lib;
-				INSTALL_PATH = "@rpath";
+				LD_DYLIB_INSTALL_NAME = "@rpath/$(EXECUTABLE_PATH)";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				PRIVATE_HEADERS_FOLDER_PATH = .;
 				PRODUCT_NAME = "$(TARGET_NAME).${DYLIB_CURRENT_VERSION}";
-				PUBLIC_HEADERS_FOLDER_PATH = .;
-				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -469,12 +466,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EXECUTABLE_PREFIX = lib;
-				INSTALL_PATH = "@rpath";
+				LD_DYLIB_INSTALL_NAME = "@rpath/$(EXECUTABLE_PATH)";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				PRIVATE_HEADERS_FOLDER_PATH = .;
 				PRODUCT_NAME = "$(TARGET_NAME).${DYLIB_CURRENT_VERSION}";
-				PUBLIC_HEADERS_FOLDER_PATH = .;
-				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -489,12 +483,9 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INSTALL_PATH = "@rpath";
+				LD_DYLIB_INSTALL_NAME = "@rpath/$(EXECUTABLE_PATH)";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				PRIVATE_HEADERS_FOLDER_PATH = Pitch;
 				PRODUCT_NAME = "$(TARGET_NAME).${DYLIB_CURRENT_VERSION}";
-				PUBLIC_HEADERS_FOLDER_PATH = Pitch;
-				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -505,12 +496,9 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				EXECUTABLE_PREFIX = lib;
-				INSTALL_PATH = "@rpath";
+				LD_DYLIB_INSTALL_NAME = "@rpath/$(EXECUTABLE_PATH)";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				PRIVATE_HEADERS_FOLDER_PATH = Pitch;
 				PRODUCT_NAME = "$(TARGET_NAME).${DYLIB_CURRENT_VERSION}";
-				PUBLIC_HEADERS_FOLDER_PATH = Pitch;
-				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
