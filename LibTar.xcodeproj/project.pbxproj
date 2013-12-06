@@ -45,7 +45,6 @@
 		B70844C018518B0F00054BC8 /* TARFile.m in Sources */ = {isa = PBXBuildFile; fileRef = B70844BE18518B0F00054BC8 /* TARFile.m */; };
 		B70844C6185192A700054BC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70844A91851898000054BC8 /* Foundation.framework */; };
 		B70844D3185192E700054BC8 /* testtool.m in Sources */ = {isa = PBXBuildFile; fileRef = B70844D2185192E700054BC8 /* testtool.m */; };
-		B70844D61851957100054BC8 /* libpitch.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B70844821851894700054BC8 /* libpitch.1.dylib */; };
 		B70844DE1851AC9E00054BC8 /* Pitch.m in Sources */ = {isa = PBXBuildFile; fileRef = B70844DD1851AC9E00054BC8 /* Pitch.m */; };
 		B70844E11851B4B500054BC8 /* NSError+Pitch.h in Headers */ = {isa = PBXBuildFile; fileRef = B70844DF1851B4B500054BC8 /* NSError+Pitch.h */; };
 		B70844E21851B4B500054BC8 /* NSError+Pitch.m in Sources */ = {isa = PBXBuildFile; fileRef = B70844E01851B4B500054BC8 /* NSError+Pitch.m */; };
@@ -127,7 +126,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B70844D61851957100054BC8 /* libpitch.1.dylib in Frameworks */,
 				B70844C6185192A700054BC8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
