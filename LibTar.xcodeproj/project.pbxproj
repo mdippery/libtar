@@ -23,6 +23,26 @@
 		B70843F018514BAC00054BC8 /* libtar_hash.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843ED18514BAB00054BC8 /* libtar_hash.c */; };
 		B70843F118514BAC00054BC8 /* libtar_list.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843EE18514BAC00054BC8 /* libtar_list.c */; };
 		B70843F218514BAC00054BC8 /* libtar_listhash.h in Headers */ = {isa = PBXBuildFile; fileRef = B70843EF18514BAC00054BC8 /* libtar_listhash.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B70844AA1851898000054BC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70844A91851898000054BC8 /* Foundation.framework */; };
+		B70844AB185189E300054BC8 /* append.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843D3185149C400054BC8 /* append.c */; };
+		B70844AC185189E300054BC8 /* block.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843D4185149C400054BC8 /* block.c */; };
+		B70844AD185189E300054BC8 /* decode.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843D5185149C400054BC8 /* decode.c */; };
+		B70844AE185189E300054BC8 /* encode.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843D6185149C400054BC8 /* encode.c */; };
+		B70844AF185189E300054BC8 /* extract.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843D7185149C400054BC8 /* extract.c */; };
+		B70844B0185189E300054BC8 /* handle.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843D8185149C400054BC8 /* handle.c */; };
+		B70844B1185189E300054BC8 /* internal.h in Headers */ = {isa = PBXBuildFile; fileRef = B70843D9185149C400054BC8 /* internal.h */; };
+		B70844B2185189E300054BC8 /* libtar_hash.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843ED18514BAB00054BC8 /* libtar_hash.c */; };
+		B70844B3185189E300054BC8 /* libtar_list.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843EE18514BAC00054BC8 /* libtar_list.c */; };
+		B70844B4185189E300054BC8 /* libtar_listhash.h in Headers */ = {isa = PBXBuildFile; fileRef = B70843EF18514BAC00054BC8 /* libtar_listhash.h */; };
+		B70844B5185189E300054BC8 /* libtar.h in Headers */ = {isa = PBXBuildFile; fileRef = B70843DA185149C400054BC8 /* libtar.h */; };
+		B70844B6185189E300054BC8 /* output.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843DB185149C400054BC8 /* output.c */; };
+		B70844B7185189E300054BC8 /* util.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843DC185149C400054BC8 /* util.c */; };
+		B70844B8185189E300054BC8 /* wrapper.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843DD185149C400054BC8 /* wrapper.c */; };
+		B70844B9185189E300054BC8 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = B70843E918514AB100054BC8 /* config.h */; };
+		B70844BA185189E300054BC8 /* compat.h in Headers */ = {isa = PBXBuildFile; fileRef = B70843EB18514B3500054BC8 /* compat.h */; };
+		B70844BC18518A1D00054BC8 /* Pitch.h in Headers */ = {isa = PBXBuildFile; fileRef = B70844BB18518A1D00054BC8 /* Pitch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B70844BF18518B0F00054BC8 /* TARFile.h in Headers */ = {isa = PBXBuildFile; fileRef = B70844BD18518B0F00054BC8 /* TARFile.h */; };
+		B70844C018518B0F00054BC8 /* TARFile.m in Sources */ = {isa = PBXBuildFile; fileRef = B70844BE18518B0F00054BC8 /* TARFile.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +63,11 @@
 		B70843ED18514BAB00054BC8 /* libtar_hash.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = libtar_hash.c; path = libtar/libtar_hash.c; sourceTree = "<group>"; };
 		B70843EE18514BAC00054BC8 /* libtar_list.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = libtar_list.c; path = libtar/libtar_list.c; sourceTree = "<group>"; };
 		B70843EF18514BAC00054BC8 /* libtar_listhash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = libtar_listhash.h; path = libtar/libtar_listhash.h; sourceTree = "<group>"; };
+		B70844821851894700054BC8 /* libpitch.1.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libpitch.1.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		B70844A91851898000054BC8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B70844BB18518A1D00054BC8 /* Pitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Pitch.h; path = libpitch/Pitch.h; sourceTree = "<group>"; };
+		B70844BD18518B0F00054BC8 /* TARFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TARFile.h; path = libpitch/TARFile.h; sourceTree = "<group>"; };
+		B70844BE18518B0F00054BC8 /* TARFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TARFile.m; path = libpitch/TARFile.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,13 +78,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B708447F1851894700054BC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B70844AA1851898000054BC8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		B70843C21851488800054BC8 = {
 			isa = PBXGroup;
 			children = (
+				B708447D1851893C00054BC8 /* libpitch */,
 				B70843D2185149B600054BC8 /* libtar */,
+				B70844831851894700054BC8 /* Frameworks */,
 				B70843CC1851488900054BC8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				B70843CB1851488900054BC8 /* libtar.1.dylib */,
+				B70844821851894700054BC8 /* libpitch.1.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +131,24 @@
 			name = libtar;
 			sourceTree = "<group>";
 		};
+		B708447D1851893C00054BC8 /* libpitch */ = {
+			isa = PBXGroup;
+			children = (
+				B70844BB18518A1D00054BC8 /* Pitch.h */,
+				B70844BD18518B0F00054BC8 /* TARFile.h */,
+				B70844BE18518B0F00054BC8 /* TARFile.m */,
+			);
+			name = libpitch;
+			sourceTree = "<group>";
+		};
+		B70844831851894700054BC8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B70844A91851898000054BC8 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -107,6 +161,20 @@
 				B70843F218514BAC00054BC8 /* libtar_listhash.h in Headers */,
 				B70843EC18514B3500054BC8 /* compat.h in Headers */,
 				B70843EA18514AB100054BC8 /* config.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B70844801851894700054BC8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B70844BA185189E300054BC8 /* compat.h in Headers */,
+				B70844B9185189E300054BC8 /* config.h in Headers */,
+				B70844BF18518B0F00054BC8 /* TARFile.h in Headers */,
+				B70844B4185189E300054BC8 /* libtar_listhash.h in Headers */,
+				B70844BC18518A1D00054BC8 /* Pitch.h in Headers */,
+				B70844B5185189E300054BC8 /* libtar.h in Headers */,
+				B70844B1185189E300054BC8 /* internal.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,6 +196,23 @@
 			name = tar;
 			productName = tar;
 			productReference = B70843CB1851488900054BC8 /* libtar.1.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		B70844811851894700054BC8 /* pitch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B70844A31851894800054BC8 /* Build configuration list for PBXNativeTarget "pitch" */;
+			buildPhases = (
+				B708447E1851894700054BC8 /* Sources */,
+				B708447F1851894700054BC8 /* Frameworks */,
+				B70844801851894700054BC8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pitch;
+			productName = pitch;
+			productReference = B70844821851894700054BC8 /* libpitch.1.dylib */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
 /* End PBXNativeTarget section */
@@ -152,6 +237,7 @@
 			projectRoot = "";
 			targets = (
 				B70843CA1851488900054BC8 /* tar */,
+				B70844811851894700054BC8 /* pitch */,
 			);
 		};
 /* End PBXProject section */
@@ -172,6 +258,25 @@
 				B70843E2185149C400054BC8 /* extract.c in Sources */,
 				B70843E1185149C400054BC8 /* encode.c in Sources */,
 				B70843F018514BAC00054BC8 /* libtar_hash.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B708447E1851894700054BC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B70844AB185189E300054BC8 /* append.c in Sources */,
+				B70844AD185189E300054BC8 /* decode.c in Sources */,
+				B70844AC185189E300054BC8 /* block.c in Sources */,
+				B70844B6185189E300054BC8 /* output.c in Sources */,
+				B70844B0185189E300054BC8 /* handle.c in Sources */,
+				B70844B8185189E300054BC8 /* wrapper.c in Sources */,
+				B70844B7185189E300054BC8 /* util.c in Sources */,
+				B70844C018518B0F00054BC8 /* TARFile.m in Sources */,
+				B70844AF185189E300054BC8 /* extract.c in Sources */,
+				B70844AE185189E300054BC8 /* encode.c in Sources */,
+				B70844B2185189E300054BC8 /* libtar_hash.c in Sources */,
+				B70844B3185189E300054BC8 /* libtar_list.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +375,40 @@
 			};
 			name = Release;
 		};
+		B70844A41851894800054BC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "@rpath";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRIVATE_HEADERS_FOLDER_PATH = Pitch;
+				PRODUCT_NAME = "$(TARGET_NAME).${DYLIB_CURRENT_VERSION}";
+				PUBLIC_HEADERS_FOLDER_PATH = Pitch;
+			};
+			name = Debug;
+		};
+		B70844A51851894800054BC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				INSTALL_PATH = "@rpath";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRIVATE_HEADERS_FOLDER_PATH = Pitch;
+				PRODUCT_NAME = "$(TARGET_NAME).${DYLIB_CURRENT_VERSION}";
+				PUBLIC_HEADERS_FOLDER_PATH = Pitch;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -290,6 +429,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		B70844A31851894800054BC8 /* Build configuration list for PBXNativeTarget "pitch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B70844A41851894800054BC8 /* Debug */,
+				B70844A51851894800054BC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
