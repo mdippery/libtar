@@ -26,6 +26,12 @@
 #import "libtar.h"
 
 
+@interface TARFile ()
+- (TAR *)tarOpen:(NSError **)error;
+- (BOOL)tarClose:(TAR *)tar error:(NSError **)error;
+@end
+
+
 @implementation TARFile
 
 + (TARFile *)fileWithContentsOfFile:(NSString *)source
@@ -52,17 +58,65 @@
     return [NSString stringWithFormat:@"<%@ %@>", [self class], [self source]];
 }
 
+- (TAR *)tarOpen:(NSError **)error
+{
+    TAR *tar;
+    int success;
+    success = tar_open(&tar, (char *) [[self source] UTF8String], NULL, O_RDONLY, 0, 0);
+    if (success == -1) {
+        char *e = strerror(errno);
+        // TODO: Create error object
+        return NULL;
+    }
+    return tar;
+}
+
+- (BOOL)tarClose:(TAR *)tar error:(NSError **)error
+{
+    int success = tar_close(tar);
+    if (success != 0) {
+        char *e = strerror(errno);
+        // TODO: Create error object
+        return NO;
+    }
+    return YES;
+}
+
+- (NSArray *)contents
+{
+    // TODO: Return an object with full entry, not just name
+
+    NSMutableArray *contents = [NSMutableArray array];
+    NSError *error;
+    TAR *tar;
+    int i;
+
+    tar = [self tarOpen:&error];
+    if (!tar) {
+        NSLog(@"Could not open tarfile: %@", error);
+        return nil;
+    }
+
+    while ((i = th_read(tar)) == 0) {
+        char *path = th_get_pathname(tar);
+        NSString *s = [NSString stringWithCString:path encoding:NSUTF8StringEncoding];
+        [contents addObject:s];
+    }
+
+    if (![self tarClose:tar error:&error]) {
+        NSLog(@"Could not close tarfile: %@", error);
+    }
+
+    return [[contents copy] autorelease];
+}
+
 - (BOOL)extractToDirectory:(NSString *)directory error:(NSError **)error
 {
     TAR *tar;
     int success;
 
-    success = tar_open(&tar, (char *) [[self source] UTF8String], NULL, O_RDONLY, 0, 0);
-    if (success == -1) {
-        char *e = strerror(errno);
-        // TODO: Create error object
-        return NO;
-    }
+    tar = [self tarOpen:error];
+    if (!tar) return NO;
 
     success = tar_extract_all(tar, (char *) [directory UTF8String]);
     if (success != 0) {
@@ -71,12 +125,7 @@
         return NO;
     }
 
-    success = tar_close(tar);
-    if (success != 0) {
-        char *e = strerror(errno);
-        // TODO: Create error object
-        return NO;
-    }
+    if (![self tarClose:tar error:error]) return NO;
 
     return YES;
 }

@@ -32,6 +32,7 @@
 
 - (id)initWithContentsOfFile:(NSString *)source;
 
+- (NSArray *)contents;
 - (BOOL)extractToDirectory:(NSString *)directory error:(NSError **)error;
 
 @end
