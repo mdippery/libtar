@@ -45,7 +45,18 @@
 		B70844C018518B0F00054BC8 /* TARFile.m in Sources */ = {isa = PBXBuildFile; fileRef = B70844BE18518B0F00054BC8 /* TARFile.m */; };
 		B70844C6185192A700054BC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70844A91851898000054BC8 /* Foundation.framework */; };
 		B70844D3185192E700054BC8 /* testtool.m in Sources */ = {isa = PBXBuildFile; fileRef = B70844D2185192E700054BC8 /* testtool.m */; };
+		B70844D61851957100054BC8 /* libpitch.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B70844821851894700054BC8 /* libpitch.1.dylib */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B70844D41851956900054BC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B70843C31851488900054BC8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B70844811851894700054BC8;
+			remoteInfo = pitch;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		B70844C3185192A700054BC8 /* CopyFiles */ = {
@@ -106,6 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B70844D61851957100054BC8 /* libpitch.1.dylib in Frameworks */,
 				B70844C6185192A700054BC8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +272,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				B70844D51851956900054BC8 /* PBXTargetDependency */,
 			);
 			name = testtool;
 			productName = testtool;
@@ -341,6 +354,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B70844D51851956900054BC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B70844811851894700054BC8 /* pitch */;
+			targetProxy = B70844D41851956900054BC8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		B70843CD1851488900054BC8 /* Debug */ = {
@@ -472,10 +493,7 @@
 		B70844CF185192A700054BC8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
+				CLANG_ENABLE_OBJC_ARC = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -483,6 +501,7 @@
 		B70844D0185192A700054BC8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

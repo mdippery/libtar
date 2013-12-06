@@ -4,9 +4,14 @@
 
 int main(int argc, const char **argv)
 {
-    char cwd[MAXPATHLEN+1];
-    getcwd(cwd, MAXPATHLEN);
-    printf("cwd:     %s\n", cwd);
-    printf("argv[1]: %s\n", argv[1]);
+    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+
+    NSString *path = [NSString stringWithCString:argv[1] encoding:NSUTF8StringEncoding];
+    fprintf(stderr, "Opening path: %s\n", [path UTF8String]);
+    TARFile *tar = [TARFile fileWithContentsOfFile:path];
+    fprintf(stderr, "Created TARFile: %s\n", [[tar description] UTF8String]);
+    [tar extractToDirectory:@"/tmp" error:NULL];
+
+    [pool release];
     return 0;
 }
