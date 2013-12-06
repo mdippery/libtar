@@ -94,8 +94,6 @@
 
 - (NSArray *)contents
 {
-    // TODO: Return an object with full entry, not just name
-
     NSMutableArray *contents = [NSMutableArray array];
     NSError *error;
     TAR *tar;
