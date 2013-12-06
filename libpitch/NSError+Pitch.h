@@ -21,16 +21,13 @@
  * THE SOFTWARE.
  */
 
-#import "TARFile.h"
-
-@class NSString;
+#import <Foundation/Foundation.h>
 
 
-extern NSString * const TARPitchErrorDomain;
+@interface NSError (Pitch)
 
-enum {
-    TARFileOpenError = 1,
-    TARFileCloseError,
-    TARFileReadError,
-    TARFileWriteError
-};
++ (id)TARErrorWithDescription:(NSString *)description reason:(char *)reason code:(NSInteger)code;
+
+- (NSString *)loggingDescription;
+
+@end

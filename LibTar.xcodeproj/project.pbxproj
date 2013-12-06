@@ -46,6 +46,9 @@
 		B70844C6185192A700054BC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70844A91851898000054BC8 /* Foundation.framework */; };
 		B70844D3185192E700054BC8 /* testtool.m in Sources */ = {isa = PBXBuildFile; fileRef = B70844D2185192E700054BC8 /* testtool.m */; };
 		B70844D61851957100054BC8 /* libpitch.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B70844821851894700054BC8 /* libpitch.1.dylib */; };
+		B70844DE1851AC9E00054BC8 /* Pitch.m in Sources */ = {isa = PBXBuildFile; fileRef = B70844DD1851AC9E00054BC8 /* Pitch.m */; };
+		B70844E11851B4B500054BC8 /* NSError+Pitch.h in Headers */ = {isa = PBXBuildFile; fileRef = B70844DF1851B4B500054BC8 /* NSError+Pitch.h */; };
+		B70844E21851B4B500054BC8 /* NSError+Pitch.m in Sources */ = {isa = PBXBuildFile; fileRef = B70844E01851B4B500054BC8 /* NSError+Pitch.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +98,9 @@
 		B70844BE18518B0F00054BC8 /* TARFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TARFile.m; path = libpitch/TARFile.m; sourceTree = "<group>"; };
 		B70844C5185192A700054BC8 /* testtool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = testtool; sourceTree = BUILT_PRODUCTS_DIR; };
 		B70844D2185192E700054BC8 /* testtool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = testtool.m; path = tests/testtool.m; sourceTree = "<group>"; };
+		B70844DD1851AC9E00054BC8 /* Pitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Pitch.m; path = libpitch/Pitch.m; sourceTree = "<group>"; };
+		B70844DF1851B4B500054BC8 /* NSError+Pitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSError+Pitch.h"; path = "libpitch/NSError+Pitch.h"; sourceTree = "<group>"; };
+		B70844E01851B4B500054BC8 /* NSError+Pitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSError+Pitch.m"; path = "libpitch/NSError+Pitch.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +179,9 @@
 			isa = PBXGroup;
 			children = (
 				B70844BB18518A1D00054BC8 /* Pitch.h */,
+				B70844DD1851AC9E00054BC8 /* Pitch.m */,
+				B70844DF1851B4B500054BC8 /* NSError+Pitch.h */,
+				B70844E01851B4B500054BC8 /* NSError+Pitch.m */,
 				B70844BD18518B0F00054BC8 /* TARFile.h */,
 				B70844BE18518B0F00054BC8 /* TARFile.m */,
 			);
@@ -217,6 +226,7 @@
 				B70844BA185189E300054BC8 /* compat.h in Headers */,
 				B70844B9185189E300054BC8 /* config.h in Headers */,
 				B70844BF18518B0F00054BC8 /* TARFile.h in Headers */,
+				B70844E11851B4B500054BC8 /* NSError+Pitch.h in Headers */,
 				B70844B4185189E300054BC8 /* libtar_listhash.h in Headers */,
 				B70844BC18518A1D00054BC8 /* Pitch.h in Headers */,
 				B70844B5185189E300054BC8 /* libtar.h in Headers */,
@@ -330,11 +340,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B70844E21851B4B500054BC8 /* NSError+Pitch.m in Sources */,
 				B70844AB185189E300054BC8 /* append.c in Sources */,
 				B70844AD185189E300054BC8 /* decode.c in Sources */,
 				B70844AC185189E300054BC8 /* block.c in Sources */,
 				B70844B6185189E300054BC8 /* output.c in Sources */,
 				B70844B0185189E300054BC8 /* handle.c in Sources */,
+				B70844DE1851AC9E00054BC8 /* Pitch.m in Sources */,
 				B70844B8185189E300054BC8 /* wrapper.c in Sources */,
 				B70844B7185189E300054BC8 /* util.c in Sources */,
 				B70844C018518B0F00054BC8 /* TARFile.m in Sources */,
@@ -534,6 +546,7 @@
 				B70844A51851894800054BC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B70844CE185192A700054BC8 /* Build configuration list for PBXNativeTarget "testtool" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +555,7 @@
 				B70844D0185192A700054BC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

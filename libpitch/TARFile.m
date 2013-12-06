@@ -22,7 +22,8 @@
  */
 
 #import "TARFile.h"
-
+#import "NSError+Pitch.h"
+#import "Pitch.h"
 #import "libtar.h"
 
 
@@ -65,7 +66,7 @@
     success = tar_open(&tar, (char *) [[self source] UTF8String], NULL, O_RDONLY, 0, 0);
     if (success == -1) {
         char *e = strerror(errno);
-        // TODO: Create error object
+        *error = [NSError TARErrorWithDescription:@"Could not open tarfile" reason:e code:TARFileOpenError];
         return NULL;
     }
     return tar;
@@ -76,7 +77,7 @@
     int success = tar_close(tar);
     if (success != 0) {
         char *e = strerror(errno);
-        // TODO: Create error object
+        *error = [NSError TARErrorWithDescription:@"Could not close tarfile" reason:e code:TARFileCloseError];
         return NO;
     }
     return YES;
@@ -93,7 +94,7 @@
 
     tar = [self tarOpen:&error];
     if (!tar) {
-        NSLog(@"Could not open tarfile: %@", error);
+        NSLog(@"%@", [error loggingDescription]);
         return nil;
     }
 
@@ -104,7 +105,7 @@
     }
 
     if (![self tarClose:tar error:&error]) {
-        NSLog(@"Could not close tarfile: %@", error);
+        NSLog(@"%@", [error loggingDescription]);
     }
 
     return [[contents copy] autorelease];
@@ -121,7 +122,7 @@
     success = tar_extract_all(tar, (char *) [directory UTF8String]);
     if (success != 0) {
         char *e = strerror(errno);
-        // TODO: Create error object
+        *error = [NSError TARErrorWithDescription:@"Could not extract tar entries" reason:e code:TARFileReadError];
         return NO;
     }
 

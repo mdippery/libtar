@@ -21,16 +21,7 @@
  * THE SOFTWARE.
  */
 
-#import "TARFile.h"
-
-@class NSString;
+#import <Foundation/Foundation.h>
 
 
-extern NSString * const TARPitchErrorDomain;
-
-enum {
-    TARFileOpenError = 1,
-    TARFileCloseError,
-    TARFileReadError,
-    TARFileWriteError
-};
+NSString * const TARPitchErrorDomain = @"com.monkey-robot.libpitch.ErrorDomain";

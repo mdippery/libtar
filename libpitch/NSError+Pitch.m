@@ -21,16 +21,27 @@
  * THE SOFTWARE.
  */
 
-#import "TARFile.h"
+#import "NSError+Pitch.h"
+#import "Pitch.h"
 
-@class NSString;
 
+@implementation NSError (Pitch)
 
-extern NSString * const TARPitchErrorDomain;
++ (id)TARErrorWithDescription:(NSString *)description reason:(char *)reason code:(NSInteger)code
+{
+    description = NSLocalizedString(description, nil);
 
-enum {
-    TARFileOpenError = 1,
-    TARFileCloseError,
-    TARFileReadError,
-    TARFileWriteError
-};
+    NSString *msg = [NSString stringWithCString:reason encoding:NSUTF8StringEncoding];
+    msg = NSLocalizedString(msg, nil);
+
+    NSDictionary *userInfo = [NSDictionary dictionaryWithObjectsAndKeys:description, NSLocalizedDescriptionKey, msg, NSLocalizedFailureReasonErrorKey, nil];
+
+    return [self errorWithDomain:TARPitchErrorDomain code:code userInfo:userInfo];
+}
+
+- (NSString *)loggingDescription
+{
+    return [NSString stringWithFormat:@"%@: %@", [self localizedDescription], [self localizedFailureReason]];
+}
+
+@end
