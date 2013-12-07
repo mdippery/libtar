@@ -31,6 +31,9 @@ extern "C"
 #define T_PREFIXLEN		155
 #define T_MAXPATHLEN		(T_NAMELEN + T_PREFIXLEN)
 
+/* Misc. typeflag values */
+#define XGLTYPE         'g'
+
 /* GNU extensions for typeflag */
 #define GNU_LONGNAME_TYPE	'L'
 #define GNU_LONGLINK_TYPE	'K'
@@ -160,6 +163,7 @@ int th_write(TAR *t);
 #define TH_ISREG(t)	((t)->th_buf.typeflag == REGTYPE \
 			 || (t)->th_buf.typeflag == AREGTYPE \
 			 || (t)->th_buf.typeflag == CONTTYPE \
+             || (t)->th_buf.typeflag == XGLTYPE \
 			 || (S_ISREG((mode_t)oct_to_int((t)->th_buf.mode)) \
 			     && (t)->th_buf.typeflag != LNKTYPE))
 #define TH_ISLNK(t)	((t)->th_buf.typeflag == LNKTYPE)
