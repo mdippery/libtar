@@ -168,7 +168,7 @@ tar_extract_regfile(TAR *t, char *realname)
 	char *filename;
 
 #ifdef DEBUG
-	printf("==> tar_extract_regfile(t=0x%lx, realname=\"%s\")\n", t,
+	printf("==> tar_extract_regfile(t=%p, realname=\"%s\")\n", t,
 	       realname);
 #endif
 
