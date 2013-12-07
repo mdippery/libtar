@@ -18,6 +18,7 @@
 #include <fcntl.h>
 #include <errno.h>
 #include <utime.h>
+#include <string.h>
 
 #ifdef STDC_HEADERS
 # include <stdlib.h>
