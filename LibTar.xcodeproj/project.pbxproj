@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		173E1A0B1A3F830800244A29 /* append.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843D3185149C400054BC8 /* append.c */; };
+		173E1A0C1A3F830800244A29 /* block.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843D4185149C400054BC8 /* block.c */; };
+		173E1A0D1A3F830800244A29 /* decode.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843D5185149C400054BC8 /* decode.c */; };
+		173E1A0E1A3F830800244A29 /* encode.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843D6185149C400054BC8 /* encode.c */; };
+		173E1A0F1A3F830800244A29 /* extract.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843D7185149C400054BC8 /* extract.c */; };
+		173E1A101A3F830800244A29 /* handle.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843D8185149C400054BC8 /* handle.c */; };
+		173E1A121A3F830800244A29 /* libtar_hash.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843ED18514BAB00054BC8 /* libtar_hash.c */; };
+		173E1A131A3F830800244A29 /* libtar_list.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843EE18514BAC00054BC8 /* libtar_list.c */; };
+		173E1A161A3F830800244A29 /* output.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843DB185149C400054BC8 /* output.c */; };
+		173E1A171A3F830800244A29 /* util.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843DC185149C400054BC8 /* util.c */; };
+		173E1A181A3F830800244A29 /* wrapper.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843DD185149C400054BC8 /* wrapper.c */; };
 		B70844C6185192A700054BC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70844A91851898000054BC8 /* Foundation.framework */; };
 		B70844D3185192E700054BC8 /* testtool.m in Sources */ = {isa = PBXBuildFile; fileRef = B70844D2185192E700054BC8 /* testtool.m */; };
 /* End PBXBuildFile section */
@@ -24,6 +35,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		173E19F41A3F82D700244A29 /* libtar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libtar.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B70843D3185149C400054BC8 /* append.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = append.c; path = libtar/append.c; sourceTree = "<group>"; };
 		B70843D4185149C400054BC8 /* block.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = block.c; path = libtar/block.c; sourceTree = "<group>"; };
 		B70843D5185149C400054BC8 /* decode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = decode.c; path = libtar/decode.c; sourceTree = "<group>"; };
@@ -54,6 +66,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		173E19F11A3F82D700244A29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B70844C2185192A700054BC8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -80,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				B70844C5185192A700054BC8 /* testtool */,
+				173E19F41A3F82D700244A29 /* libtar.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,7 +160,34 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		173E19F21A3F82D700244A29 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		173E19F31A3F82D700244A29 /* tar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 173E1A051A3F82D800244A29 /* Build configuration list for PBXNativeTarget "tar" */;
+			buildPhases = (
+				173E19F01A3F82D700244A29 /* Sources */,
+				173E19F11A3F82D700244A29 /* Frameworks */,
+				173E19F21A3F82D700244A29 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tar;
+			productName = tar;
+			productReference = 173E19F41A3F82D700244A29 /* libtar.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		B70844C4185192A700054BC8 /* testtool */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B70844CE185192A700054BC8 /* Build configuration list for PBXNativeTarget "testtool" */;
@@ -166,6 +213,11 @@
 			attributes = {
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Michael Dippery";
+				TargetAttributes = {
+					173E19F31A3F82D700244A29 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
 			};
 			buildConfigurationList = B70843C61851488900054BC8 /* Build configuration list for PBXProject "LibTar" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -180,11 +232,30 @@
 			projectRoot = "";
 			targets = (
 				B70844C4185192A700054BC8 /* testtool */,
+				173E19F31A3F82D700244A29 /* tar */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		173E19F01A3F82D700244A29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				173E1A0B1A3F830800244A29 /* append.c in Sources */,
+				173E1A0C1A3F830800244A29 /* block.c in Sources */,
+				173E1A0D1A3F830800244A29 /* decode.c in Sources */,
+				173E1A0E1A3F830800244A29 /* encode.c in Sources */,
+				173E1A0F1A3F830800244A29 /* extract.c in Sources */,
+				173E1A101A3F830800244A29 /* handle.c in Sources */,
+				173E1A121A3F830800244A29 /* libtar_hash.c in Sources */,
+				173E1A131A3F830800244A29 /* libtar_list.c in Sources */,
+				173E1A161A3F830800244A29 /* output.c in Sources */,
+				173E1A171A3F830800244A29 /* util.c in Sources */,
+				173E1A181A3F830800244A29 /* wrapper.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B70844C1185192A700054BC8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -196,6 +267,50 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		173E1A061A3F82D800244A29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CURRENT_PROJECT_VERSION = 0.1.1;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/libtar",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		173E1A071A3F82D800244A29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CURRENT_PROJECT_VERSION = 0.1.1;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/libtar",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		B70843CD1851488900054BC8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -283,6 +398,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		173E1A051A3F82D800244A29 /* Build configuration list for PBXNativeTarget "tar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				173E1A061A3F82D800244A29 /* Debug */,
+				173E1A071A3F82D800244A29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		B70843C61851488900054BC8 /* Build configuration list for PBXProject "LibTar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
