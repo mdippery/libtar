@@ -23,6 +23,7 @@
 		173E1A381A3F847F00244A29 /* TAREntry.m in Sources */ = {isa = PBXBuildFile; fileRef = B70844E41851BB7300054BC8 /* TAREntry.m */; };
 		173E1A391A3F847F00244A29 /* TARFile.m in Sources */ = {isa = PBXBuildFile; fileRef = B70844BE18518B0F00054BC8 /* TARFile.m */; };
 		173E1A3C1A3F84A100244A29 /* libtar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 173E19F41A3F82D700244A29 /* libtar.a */; };
+		173E1A3F1A3F856D00244A29 /* libpitch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 173E1A1F1A3F844F00244A29 /* libpitch.a */; };
 		B70844C6185192A700054BC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70844A91851898000054BC8 /* Foundation.framework */; };
 		B70844D3185192E700054BC8 /* testtool.m in Sources */ = {isa = PBXBuildFile; fileRef = B70844D2185192E700054BC8 /* testtool.m */; };
 /* End PBXBuildFile section */
@@ -34,6 +35,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 173E19F31A3F82D700244A29;
 			remoteInfo = tar;
+		};
+		173E1A3D1A3F856400244A29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B70843C31851488900054BC8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 173E1A1E1A3F844F00244A29;
+			remoteInfo = pitch;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -101,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				173E1A3F1A3F856D00244A29 /* libpitch.a in Frameworks */,
 				B70844C6185192A700054BC8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,6 +258,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				173E1A3E1A3F856400244A29 /* PBXTargetDependency */,
 			);
 			name = testtool;
 			productName = testtool;
@@ -336,6 +346,11 @@
 			isa = PBXTargetDependency;
 			target = 173E19F31A3F82D700244A29 /* tar */;
 			targetProxy = 173E1A3A1A3F849B00244A29 /* PBXContainerItemProxy */;
+		};
+		173E1A3E1A3F856400244A29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 173E1A1E1A3F844F00244A29 /* pitch */;
+			targetProxy = 173E1A3D1A3F856400244A29 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
