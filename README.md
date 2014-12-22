@@ -17,8 +17,6 @@ Urbana-Champaign. **libpitch** is written by Michael Dippery.
     Copyright 1998-2003 Mark D. Roth
     All rights reserved.
 
-    decode.c - libtar code to decode tar header blocks
-
     Mark D. Roth <roth@uiuc.edu>
     Campus Information Technologies and Educational Services
     University of Illinois at Urbana-Champaign
