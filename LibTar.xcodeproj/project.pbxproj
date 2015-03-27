@@ -302,7 +302,7 @@
 		B70843C31851488900054BC8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0600;
+				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = "Michael Dippery";
 			};
 			buildConfigurationList = B70843C61851488900054BC8 /* Build configuration list for PBXProject "LibTar" */;
