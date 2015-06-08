@@ -22,6 +22,10 @@
  */
 
 #import <Foundation/Foundation.h>
+#import "TAREntry.h"
+
+
+typedef void (^TAREntryAction)(TAREntry *, NSUInteger idx, BOOL *stop);
 
 
 @interface TARFile : NSObject
@@ -32,7 +36,7 @@
 
 - (id)initWithContentsOfFile:(NSString *)source;
 
-- (NSArray *)contents;
+- (void)enumerateContentsUsingBlock:(TAREntryAction)block;
 - (BOOL)extractToDirectory:(NSString *)directory error:(NSError **)error;
 
 @end

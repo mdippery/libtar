@@ -92,33 +92,27 @@
     return YES;
 }
 
-- (NSArray *)contents
+- (void)enumerateContentsUsingBlock:(TAREntryAction)block error:(NSError **)error
 {
-    NSMutableArray *contents = [NSMutableArray array];
-    NSError *error;
     TAR *tar;
     int i;
+    int idx = 0;
 
-    tar = [self tarOpen:&error];
-    if (!tar) {
-        NSLog(@"%@", [error loggingDescription]);
-        return nil;
-    }
+    tar = [self tarOpen:error];
+    if (!tar) return nil;
 
     while ((i = th_read(tar)) == 0) {
         TAREntry *entry = [TAREntry entryWithContentsOfTAR:tar];
-        [contents addObject:entry];
+        BOOL stop = NO;
+        block(entry, idx++, &stop);
+        if (stop) break;
         if (TH_ISREG(tar) && tar_skip_regfile(tar) != 0) {
-            NSLog(@"Could not skip regfile: %s", strerror(errno));
+            *error = [NSError TARErrorWithDescription:@"Could not skip regfile" reason:strerr(errno) code:TARFileReadError];
             break;
         }
     }
 
-    if (![self tarClose:tar error:&error]) {
-        NSLog(@"%@", [error loggingDescription]);
-    }
-
-    return [[contents copy] autorelease];
+    [self tarClose:tar error:error];
 }
 
 - (BOOL)extractToDirectory:(NSString *)directory error:(NSError **)error
