@@ -7,58 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B70843DE185149C400054BC8 /* append.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843D3185149C400054BC8 /* append.c */; };
-		B70843DF185149C400054BC8 /* block.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843D4185149C400054BC8 /* block.c */; };
-		B70843E0185149C400054BC8 /* decode.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843D5185149C400054BC8 /* decode.c */; };
-		B70843E1185149C400054BC8 /* encode.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843D6185149C400054BC8 /* encode.c */; };
-		B70843E2185149C400054BC8 /* extract.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843D7185149C400054BC8 /* extract.c */; };
-		B70843E3185149C400054BC8 /* handle.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843D8185149C400054BC8 /* handle.c */; };
-		B70843E4185149C400054BC8 /* internal.h in Headers */ = {isa = PBXBuildFile; fileRef = B70843D9185149C400054BC8 /* internal.h */; };
-		B70843E5185149C400054BC8 /* libtar.h in Headers */ = {isa = PBXBuildFile; fileRef = B70843DA185149C400054BC8 /* libtar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B70843E6185149C400054BC8 /* output.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843DB185149C400054BC8 /* output.c */; };
-		B70843E7185149C400054BC8 /* util.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843DC185149C400054BC8 /* util.c */; };
-		B70843E8185149C400054BC8 /* wrapper.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843DD185149C400054BC8 /* wrapper.c */; };
-		B70843EA18514AB100054BC8 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = B70843E918514AB100054BC8 /* config.h */; };
-		B70843EC18514B3500054BC8 /* compat.h in Headers */ = {isa = PBXBuildFile; fileRef = B70843EB18514B3500054BC8 /* compat.h */; };
-		B70843F018514BAC00054BC8 /* libtar_hash.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843ED18514BAB00054BC8 /* libtar_hash.c */; };
-		B70843F118514BAC00054BC8 /* libtar_list.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843EE18514BAC00054BC8 /* libtar_list.c */; };
-		B70843F218514BAC00054BC8 /* libtar_listhash.h in Headers */ = {isa = PBXBuildFile; fileRef = B70843EF18514BAC00054BC8 /* libtar_listhash.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B70844AA1851898000054BC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70844A91851898000054BC8 /* Foundation.framework */; };
-		B70844AB185189E300054BC8 /* append.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843D3185149C400054BC8 /* append.c */; };
-		B70844AC185189E300054BC8 /* block.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843D4185149C400054BC8 /* block.c */; };
-		B70844AD185189E300054BC8 /* decode.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843D5185149C400054BC8 /* decode.c */; };
-		B70844AE185189E300054BC8 /* encode.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843D6185149C400054BC8 /* encode.c */; };
-		B70844AF185189E300054BC8 /* extract.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843D7185149C400054BC8 /* extract.c */; };
-		B70844B0185189E300054BC8 /* handle.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843D8185149C400054BC8 /* handle.c */; };
-		B70844B1185189E300054BC8 /* internal.h in Headers */ = {isa = PBXBuildFile; fileRef = B70843D9185149C400054BC8 /* internal.h */; };
-		B70844B2185189E300054BC8 /* libtar_hash.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843ED18514BAB00054BC8 /* libtar_hash.c */; };
-		B70844B3185189E300054BC8 /* libtar_list.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843EE18514BAC00054BC8 /* libtar_list.c */; };
-		B70844B4185189E300054BC8 /* libtar_listhash.h in Headers */ = {isa = PBXBuildFile; fileRef = B70843EF18514BAC00054BC8 /* libtar_listhash.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B70844B5185189E300054BC8 /* libtar.h in Headers */ = {isa = PBXBuildFile; fileRef = B70843DA185149C400054BC8 /* libtar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B70844B6185189E300054BC8 /* output.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843DB185149C400054BC8 /* output.c */; };
-		B70844B7185189E300054BC8 /* util.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843DC185149C400054BC8 /* util.c */; };
-		B70844B8185189E300054BC8 /* wrapper.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843DD185149C400054BC8 /* wrapper.c */; };
-		B70844B9185189E300054BC8 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = B70843E918514AB100054BC8 /* config.h */; };
-		B70844BA185189E300054BC8 /* compat.h in Headers */ = {isa = PBXBuildFile; fileRef = B70843EB18514B3500054BC8 /* compat.h */; };
-		B70844BC18518A1D00054BC8 /* Pitch.h in Headers */ = {isa = PBXBuildFile; fileRef = B70844BB18518A1D00054BC8 /* Pitch.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B70844BF18518B0F00054BC8 /* TARFile.h in Headers */ = {isa = PBXBuildFile; fileRef = B70844BD18518B0F00054BC8 /* TARFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B70844C018518B0F00054BC8 /* TARFile.m in Sources */ = {isa = PBXBuildFile; fileRef = B70844BE18518B0F00054BC8 /* TARFile.m */; };
+		173E1A0B1A3F830800244A29 /* append.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843D3185149C400054BC8 /* append.c */; };
+		173E1A0C1A3F830800244A29 /* block.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843D4185149C400054BC8 /* block.c */; };
+		173E1A0D1A3F830800244A29 /* decode.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843D5185149C400054BC8 /* decode.c */; };
+		173E1A0E1A3F830800244A29 /* encode.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843D6185149C400054BC8 /* encode.c */; };
+		173E1A0F1A3F830800244A29 /* extract.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843D7185149C400054BC8 /* extract.c */; };
+		173E1A101A3F830800244A29 /* handle.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843D8185149C400054BC8 /* handle.c */; };
+		173E1A121A3F830800244A29 /* libtar_hash.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843ED18514BAB00054BC8 /* libtar_hash.c */; };
+		173E1A131A3F830800244A29 /* libtar_list.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843EE18514BAC00054BC8 /* libtar_list.c */; };
+		173E1A161A3F830800244A29 /* output.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843DB185149C400054BC8 /* output.c */; };
+		173E1A171A3F830800244A29 /* util.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843DC185149C400054BC8 /* util.c */; };
+		173E1A181A3F830800244A29 /* wrapper.c in Sources */ = {isa = PBXBuildFile; fileRef = B70843DD185149C400054BC8 /* wrapper.c */; };
+		173E1A361A3F847F00244A29 /* Pitch.m in Sources */ = {isa = PBXBuildFile; fileRef = B70844DD1851AC9E00054BC8 /* Pitch.m */; };
+		173E1A371A3F847F00244A29 /* NSError+Pitch.m in Sources */ = {isa = PBXBuildFile; fileRef = B70844E01851B4B500054BC8 /* NSError+Pitch.m */; };
+		173E1A381A3F847F00244A29 /* TAREntry.m in Sources */ = {isa = PBXBuildFile; fileRef = B70844E41851BB7300054BC8 /* TAREntry.m */; };
+		173E1A391A3F847F00244A29 /* TARFile.m in Sources */ = {isa = PBXBuildFile; fileRef = B70844BE18518B0F00054BC8 /* TARFile.m */; };
+		173E1A3C1A3F84A100244A29 /* libtar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 173E19F41A3F82D700244A29 /* libtar.a */; };
+		173E1A3F1A3F856D00244A29 /* libpitch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 173E1A1F1A3F844F00244A29 /* libpitch.a */; };
 		B70844C6185192A700054BC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70844A91851898000054BC8 /* Foundation.framework */; };
 		B70844D3185192E700054BC8 /* testtool.m in Sources */ = {isa = PBXBuildFile; fileRef = B70844D2185192E700054BC8 /* testtool.m */; };
-		B70844DE1851AC9E00054BC8 /* Pitch.m in Sources */ = {isa = PBXBuildFile; fileRef = B70844DD1851AC9E00054BC8 /* Pitch.m */; };
-		B70844E11851B4B500054BC8 /* NSError+Pitch.h in Headers */ = {isa = PBXBuildFile; fileRef = B70844DF1851B4B500054BC8 /* NSError+Pitch.h */; };
-		B70844E21851B4B500054BC8 /* NSError+Pitch.m in Sources */ = {isa = PBXBuildFile; fileRef = B70844E01851B4B500054BC8 /* NSError+Pitch.m */; };
-		B70844E51851BB7300054BC8 /* TAREntry.h in Headers */ = {isa = PBXBuildFile; fileRef = B70844E31851BB7300054BC8 /* TAREntry.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B70844E61851BB7300054BC8 /* TAREntry.m in Sources */ = {isa = PBXBuildFile; fileRef = B70844E41851BB7300054BC8 /* TAREntry.m */; };
-		B78C9B7918528DCA00A47D59 /* libpitch.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B70844821851894700054BC8 /* libpitch.1.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B70844D41851956900054BC8 /* PBXContainerItemProxy */ = {
+		173E1A3A1A3F849B00244A29 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B70843C31851488900054BC8 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B70844811851894700054BC8;
+			remoteGlobalIDString = 173E19F31A3F82D700244A29;
+			remoteInfo = tar;
+		};
+		173E1A3D1A3F856400244A29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B70843C31851488900054BC8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 173E1A1E1A3F844F00244A29;
 			remoteInfo = pitch;
 		};
 /* End PBXContainerItemProxy section */
@@ -76,7 +58,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B70843CB1851488900054BC8 /* libtar.1.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libtar.1.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		173E19F41A3F82D700244A29 /* libtar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libtar.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		173E1A1F1A3F844F00244A29 /* libpitch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libpitch.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B70843D3185149C400054BC8 /* append.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = append.c; path = libtar/append.c; sourceTree = "<group>"; };
 		B70843D4185149C400054BC8 /* block.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = block.c; path = libtar/block.c; sourceTree = "<group>"; };
 		B70843D5185149C400054BC8 /* decode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = decode.c; path = libtar/decode.c; sourceTree = "<group>"; };
@@ -93,7 +76,6 @@
 		B70843ED18514BAB00054BC8 /* libtar_hash.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = libtar_hash.c; path = libtar/libtar_hash.c; sourceTree = "<group>"; };
 		B70843EE18514BAC00054BC8 /* libtar_list.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = libtar_list.c; path = libtar/libtar_list.c; sourceTree = "<group>"; };
 		B70843EF18514BAC00054BC8 /* libtar_listhash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = libtar_listhash.h; path = libtar/libtar_listhash.h; sourceTree = "<group>"; };
-		B70844821851894700054BC8 /* libpitch.1.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libpitch.1.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		B70844A91851898000054BC8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B70844BB18518A1D00054BC8 /* Pitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Pitch.h; path = libpitch/Pitch.h; sourceTree = "<group>"; };
 		B70844BD18518B0F00054BC8 /* TARFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TARFile.h; path = libpitch/TARFile.h; sourceTree = "<group>"; };
@@ -108,18 +90,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B70843C81851488900054BC8 /* Frameworks */ = {
+		173E19F11A3F82D700244A29 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B708447F1851894700054BC8 /* Frameworks */ = {
+		173E1A1C1A3F844F00244A29 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B70844AA1851898000054BC8 /* Foundation.framework in Frameworks */,
+				173E1A3C1A3F84A100244A29 /* libtar.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,7 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B78C9B7918528DCA00A47D59 /* libpitch.1.dylib in Frameworks */,
+				173E1A3F1A3F856D00244A29 /* libpitch.a in Frameworks */,
 				B70844C6185192A700054BC8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,9 +131,9 @@
 		B70843CC1851488900054BC8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B70843CB1851488900054BC8 /* libtar.1.dylib */,
-				B70844821851894700054BC8 /* libpitch.1.dylib */,
 				B70844C5185192A700054BC8 /* testtool */,
+				173E19F41A3F82D700244A29 /* libtar.a */,
+				173E1A1F1A3F844F00244A29 /* libpitch.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -213,44 +195,30 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		B70843C91851488900054BC8 /* Headers */ = {
+		173E19F21A3F82D700244A29 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B70843E5185149C400054BC8 /* libtar.h in Headers */,
-				B70843E4185149C400054BC8 /* internal.h in Headers */,
-				B70843F218514BAC00054BC8 /* libtar_listhash.h in Headers */,
-				B70843EC18514B3500054BC8 /* compat.h in Headers */,
-				B70843EA18514AB100054BC8 /* config.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B70844801851894700054BC8 /* Headers */ = {
+		173E1A1D1A3F844F00244A29 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B70844BA185189E300054BC8 /* compat.h in Headers */,
-				B70844B9185189E300054BC8 /* config.h in Headers */,
-				B70844BF18518B0F00054BC8 /* TARFile.h in Headers */,
-				B70844E11851B4B500054BC8 /* NSError+Pitch.h in Headers */,
-				B70844B4185189E300054BC8 /* libtar_listhash.h in Headers */,
-				B70844BC18518A1D00054BC8 /* Pitch.h in Headers */,
-				B70844E51851BB7300054BC8 /* TAREntry.h in Headers */,
-				B70844B5185189E300054BC8 /* libtar.h in Headers */,
-				B70844B1185189E300054BC8 /* internal.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		B70843CA1851488900054BC8 /* tar */ = {
+		173E19F31A3F82D700244A29 /* tar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B70843CF1851488900054BC8 /* Build configuration list for PBXNativeTarget "tar" */;
+			buildConfigurationList = 173E1A051A3F82D800244A29 /* Build configuration list for PBXNativeTarget "tar" */;
 			buildPhases = (
-				B70843C71851488900054BC8 /* Sources */,
-				B70843C81851488900054BC8 /* Frameworks */,
-				B70843C91851488900054BC8 /* Headers */,
+				173E19F01A3F82D700244A29 /* Sources */,
+				173E19F11A3F82D700244A29 /* Frameworks */,
+				173E19F21A3F82D700244A29 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -258,25 +226,26 @@
 			);
 			name = tar;
 			productName = tar;
-			productReference = B70843CB1851488900054BC8 /* libtar.1.dylib */;
-			productType = "com.apple.product-type.library.dynamic";
+			productReference = 173E19F41A3F82D700244A29 /* libtar.a */;
+			productType = "com.apple.product-type.library.static";
 		};
-		B70844811851894700054BC8 /* pitch */ = {
+		173E1A1E1A3F844F00244A29 /* pitch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B70844A31851894800054BC8 /* Build configuration list for PBXNativeTarget "pitch" */;
+			buildConfigurationList = 173E1A301A3F845000244A29 /* Build configuration list for PBXNativeTarget "pitch" */;
 			buildPhases = (
-				B708447E1851894700054BC8 /* Sources */,
-				B708447F1851894700054BC8 /* Frameworks */,
-				B70844801851894700054BC8 /* Headers */,
+				173E1A1B1A3F844F00244A29 /* Sources */,
+				173E1A1C1A3F844F00244A29 /* Frameworks */,
+				173E1A1D1A3F844F00244A29 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				173E1A3B1A3F849B00244A29 /* PBXTargetDependency */,
 			);
 			name = pitch;
 			productName = pitch;
-			productReference = B70844821851894700054BC8 /* libpitch.1.dylib */;
-			productType = "com.apple.product-type.library.dynamic";
+			productReference = 173E1A1F1A3F844F00244A29 /* libpitch.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 		B70844C4185192A700054BC8 /* testtool */ = {
 			isa = PBXNativeTarget;
@@ -289,7 +258,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				B70844D51851956900054BC8 /* PBXTargetDependency */,
+				173E1A3E1A3F856400244A29 /* PBXTargetDependency */,
 			);
 			name = testtool;
 			productName = testtool;
@@ -302,8 +271,16 @@
 		B70843C31851488900054BC8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Michael Dippery";
+				TargetAttributes = {
+					173E19F31A3F82D700244A29 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					173E1A1E1A3F844F00244A29 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
 			};
 			buildConfigurationList = B70843C61851488900054BC8 /* Build configuration list for PBXProject "LibTar" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -317,51 +294,40 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B70843CA1851488900054BC8 /* tar */,
-				B70844811851894700054BC8 /* pitch */,
 				B70844C4185192A700054BC8 /* testtool */,
+				173E19F31A3F82D700244A29 /* tar */,
+				173E1A1E1A3F844F00244A29 /* pitch */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B70843C71851488900054BC8 /* Sources */ = {
+		173E19F01A3F82D700244A29 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B70843DE185149C400054BC8 /* append.c in Sources */,
-				B70843E0185149C400054BC8 /* decode.c in Sources */,
-				B70843DF185149C400054BC8 /* block.c in Sources */,
-				B70843E3185149C400054BC8 /* handle.c in Sources */,
-				B70843E8185149C400054BC8 /* wrapper.c in Sources */,
-				B70843E6185149C400054BC8 /* output.c in Sources */,
-				B70843E7185149C400054BC8 /* util.c in Sources */,
-				B70843F118514BAC00054BC8 /* libtar_list.c in Sources */,
-				B70843E2185149C400054BC8 /* extract.c in Sources */,
-				B70843E1185149C400054BC8 /* encode.c in Sources */,
-				B70843F018514BAC00054BC8 /* libtar_hash.c in Sources */,
+				173E1A0B1A3F830800244A29 /* append.c in Sources */,
+				173E1A0C1A3F830800244A29 /* block.c in Sources */,
+				173E1A0D1A3F830800244A29 /* decode.c in Sources */,
+				173E1A0E1A3F830800244A29 /* encode.c in Sources */,
+				173E1A0F1A3F830800244A29 /* extract.c in Sources */,
+				173E1A101A3F830800244A29 /* handle.c in Sources */,
+				173E1A121A3F830800244A29 /* libtar_hash.c in Sources */,
+				173E1A131A3F830800244A29 /* libtar_list.c in Sources */,
+				173E1A161A3F830800244A29 /* output.c in Sources */,
+				173E1A171A3F830800244A29 /* util.c in Sources */,
+				173E1A181A3F830800244A29 /* wrapper.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B708447E1851894700054BC8 /* Sources */ = {
+		173E1A1B1A3F844F00244A29 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B70844E21851B4B500054BC8 /* NSError+Pitch.m in Sources */,
-				B70844AB185189E300054BC8 /* append.c in Sources */,
-				B70844AD185189E300054BC8 /* decode.c in Sources */,
-				B70844AC185189E300054BC8 /* block.c in Sources */,
-				B70844B6185189E300054BC8 /* output.c in Sources */,
-				B70844B0185189E300054BC8 /* handle.c in Sources */,
-				B70844DE1851AC9E00054BC8 /* Pitch.m in Sources */,
-				B70844B8185189E300054BC8 /* wrapper.c in Sources */,
-				B70844B7185189E300054BC8 /* util.c in Sources */,
-				B70844C018518B0F00054BC8 /* TARFile.m in Sources */,
-				B70844AF185189E300054BC8 /* extract.c in Sources */,
-				B70844AE185189E300054BC8 /* encode.c in Sources */,
-				B70844B2185189E300054BC8 /* libtar_hash.c in Sources */,
-				B70844E61851BB7300054BC8 /* TAREntry.m in Sources */,
-				B70844B3185189E300054BC8 /* libtar_list.c in Sources */,
+				173E1A361A3F847F00244A29 /* Pitch.m in Sources */,
+				173E1A371A3F847F00244A29 /* NSError+Pitch.m in Sources */,
+				173E1A381A3F847F00244A29 /* TAREntry.m in Sources */,
+				173E1A391A3F847F00244A29 /* TARFile.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,14 +342,105 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B70844D51851956900054BC8 /* PBXTargetDependency */ = {
+		173E1A3B1A3F849B00244A29 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B70844811851894700054BC8 /* pitch */;
-			targetProxy = B70844D41851956900054BC8 /* PBXContainerItemProxy */;
+			target = 173E19F31A3F82D700244A29 /* tar */;
+			targetProxy = 173E1A3A1A3F849B00244A29 /* PBXContainerItemProxy */;
+		};
+		173E1A3E1A3F856400244A29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 173E1A1E1A3F844F00244A29 /* pitch */;
+			targetProxy = 173E1A3D1A3F856400244A29 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		173E1A061A3F82D800244A29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 0.1.1;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/libtar",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		173E1A071A3F82D800244A29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 0.1.1;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/libtar",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		173E1A311A3F845000244A29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 0.1.1;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		173E1A321A3F845000244A29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 0.1.1;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		B70843CD1851488900054BC8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -453,60 +510,6 @@
 			};
 			name = Release;
 		};
-		B70843D01851488900054BC8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = lib;
-				LD_DYLIB_INSTALL_NAME = "@rpath/$(EXECUTABLE_PATH)";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				PRODUCT_NAME = "$(TARGET_NAME).${DYLIB_CURRENT_VERSION}";
-			};
-			name = Debug;
-		};
-		B70843D11851488900054BC8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = lib;
-				LD_DYLIB_INSTALL_NAME = "@rpath/$(EXECUTABLE_PATH)";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				PRODUCT_NAME = "$(TARGET_NAME).${DYLIB_CURRENT_VERSION}";
-			};
-			name = Release;
-		};
-		B70844A41851894800054BC8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				EXECUTABLE_PREFIX = lib;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				LD_DYLIB_INSTALL_NAME = "@rpath/$(EXECUTABLE_PATH)";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				PRODUCT_NAME = "$(TARGET_NAME).${DYLIB_CURRENT_VERSION}";
-			};
-			name = Debug;
-		};
-		B70844A51851894800054BC8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = NO;
-				COMBINE_HIDPI_IMAGES = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				EXECUTABLE_PREFIX = lib;
-				LD_DYLIB_INSTALL_NAME = "@rpath/$(EXECUTABLE_PATH)";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				PRODUCT_NAME = "$(TARGET_NAME).${DYLIB_CURRENT_VERSION}";
-			};
-			name = Release;
-		};
 		B70844CF185192A700054BC8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -526,29 +529,29 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		173E1A051A3F82D800244A29 /* Build configuration list for PBXNativeTarget "tar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				173E1A061A3F82D800244A29 /* Debug */,
+				173E1A071A3F82D800244A29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		173E1A301A3F845000244A29 /* Build configuration list for PBXNativeTarget "pitch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				173E1A311A3F845000244A29 /* Debug */,
+				173E1A321A3F845000244A29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B70843C61851488900054BC8 /* Build configuration list for PBXProject "LibTar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B70843CD1851488900054BC8 /* Debug */,
 				B70843CE1851488900054BC8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B70843CF1851488900054BC8 /* Build configuration list for PBXNativeTarget "tar" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B70843D01851488900054BC8 /* Debug */,
-				B70843D11851488900054BC8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B70844A31851894800054BC8 /* Build configuration list for PBXNativeTarget "pitch" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B70844A41851894800054BC8 /* Debug */,
-				B70844A51851894800054BC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
